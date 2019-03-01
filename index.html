@@ -229,6 +229,273 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://wrsophia.github.io/2019/02/21/Algorithm-读书笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wrsophia">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="wrsophia's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/21/Algorithm-读书笔记/" itemprop="url">Algorithm 读书笔记</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-21T10:12:14+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h2><blockquote>
+<p>动态规划的本质还是递归，如同分治方法。不过分治方法将问题分化为互不相交的字问题，而动态规划应用于子问题重叠的情况，递归求解。然而这时候会反复求解那些公共子问题，于是考虑把子问题的解保存在一个数组中，实现只求解一次。</p>
+</blockquote>
+<ul>
+<li><p><strong>带备忘的自顶向下法</strong></p>
+<p>仍然按自然的递归形式编写过程，但过程会保存每个子问题的解。</p>
+</li>
+<li><p><strong>自底向上法</strong></p>
+<p>需要恰当定义子问题“规模”的概念，使得任何子问题都只依赖更小的子问题的求解。然后按子问题规模排序，由小至大顺序求解</p>
+</li>
+</ul>
+<p><em>有时候自顶向下方法并未真的递归考察所有可能子问题，另一方面，由于没有频繁的递归函数调用开销，自底向上方法的时间复杂度通常具有更小的系数</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://wrsophia.github.io/2019/02/19/CSAPP-读书笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wrsophia">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="wrsophia's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/19/CSAPP-读书笔记/" itemprop="url">CSAPP 读书笔记</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-19T17:29:38+08:00">
+                2019-02-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="信息的表示和处理"><a href="#信息的表示和处理" class="headerlink" title="信息的表示和处理"></a>信息的表示和处理</h2><h3 id="CMU-15-213-Lecture-01"><a href="#CMU-15-213-Lecture-01" class="headerlink" title="CMU 15-213 Lecture 01"></a>CMU 15-213 Lecture 01</h3><ul>
+<li><p>为什么 x^2 &gt;= 0 对于float变量总成立？</p>
+<p>因为 IEEE 浮点数表示中有一种表示无穷大的方式 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* Mac 上的 lldb (Linux上的gdb) 可以用来做计算器，例如</span><br><span class="line"></span><br><span class="line">  ```print 4000 * 4000</span><br></pre></td></tr></table></figure></p>
+</li>
+<li><p>Float 是不满足结合律的，比如 <code>(1e20 + -1e20) + 3.14 = 3.14</code> 然而 <code>1e20 + (-1e20 + 3.14) = 0</code> </p>
+<p>因为Float无法精确表示，会丢掉不重要的位</p>
+<blockquote>
+<p>但我觉得这个例子是因为溢出，把3.14换成3也能得到相同的结果</p>
+</blockquote>
+</li>
+<li><p>为什么二维数组遍历的时候一般先遍历列后遍历行？</p>
+<p>尤其是数组非常大的时候，前者的速度是后者的几十倍</p>
+<p>二维数组在存储的时候是一维的，比如 <code>arr[2][2]</code> 在存储的时候是这样的：</p>
+<p><code>arr[0][0]</code>, <code>arr[0][1]</code>, <code>arr[1][0]</code>, <code>arr[1][1]</code>, 由下往上</p>
+<p>虽然我们认为取一个数组元素是常数时间，就算先遍历行也可以通过地址快速取到，但是计算机在取一个元素时会把它相邻的许多元素加到缓存里，所以先列后行的遍历元素可以到高速缓存里取</p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://wrsophia.github.io/2019/02/18/my-first-record/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -301,7 +568,8 @@
         
           
             <h2 id="shanshan"><a href="#shanshan" class="headerlink" title="shanshan"></a>shanshan</h2><p>haha, first test</p>
-<h2 id="怂"><a href="#怂" class="headerlink" title="怂"></a>怂</h2>
+<p>## </p>
+
           
         
       
@@ -510,7 +778,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="wrsophia&#39;s blog">
-<meta property="og:url" content="https://wrsophia.github.io/archives/2019/index.html">
+<meta name="description" content="动态规划 动态规划的本质还是递归，如同分治方法。不过分治方法将问题分化为互不相交的字问题，而动态规划应用于子问题重叠的情况，递归求解。然而这时候会反复求解那些公共子问题，于是考虑把子问题的解保存在一个数组中，实现只求解一次。   带备忘的自顶向下法 仍然按自然的递归形式编写过程，但过程会保存每个子问题的解。  自底向上法 需要恰当定义子问题“规模”的概念，使得任何子问题都只依赖更小的子问题的求解。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Algorithm 读书笔记">
+<meta property="og:url" content="https://wrsophia.github.io/2019/02/21/Algorithm-读书笔记/index.html">
 <meta property="og:site_name" content="wrsophia&#39;s blog">
+<meta property="og:description" content="动态规划 动态规划的本质还是递归，如同分治方法。不过分治方法将问题分化为互不相交的字问题，而动态规划应用于子问题重叠的情况，递归求解。然而这时候会反复求解那些公共子问题，于是考虑把子问题的解保存在一个数组中，实现只求解一次。   带备忘的自顶向下法 仍然按自然的递归形式编写过程，但过程会保存每个子问题的解。  自底向上法 需要恰当定义子问题“规模”的概念，使得任何子问题都只依赖更小的子问题的求解。">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-02-21T02:44:36.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wrsophia&#39;s blog">
+<meta name="twitter:title" content="Algorithm 读书笔记">
+<meta name="twitter:description" content="动态规划 动态规划的本质还是递归，如同分治方法。不过分治方法将问题分化为互不相交的字问题，而动态规划应用于子问题重叠的情况，递归求解。然而这时候会反复求解那些公共子问题，于是考虑把子问题的解保存在一个数组中，实现只求解一次。   带备忘的自顶向下法 仍然按自然的递归形式编写过程，但过程会保存每个子问题的解。  自底向上法 需要恰当定义子问题“规模”的概念，使得任何子问题都只依赖更小的子问题的求解。">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="https://wrsophia.github.io/archives/2019/">
+  <link rel="canonical" href="https://wrsophia.github.io/2019/02/21/Algorithm-读书笔记/">
 
 
 
 
 
-  <title>Archive | wrsophia's blog</title>
+  <title>Algorithm 读书笔记 | wrsophia's blog</title>
   
 
 
@@ -140,7 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,177 +218,152 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://wrsophia.github.io/2019/02/21/Algorithm-读书笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wrsophia">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="wrsophia's blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">Algorithm 读书笔记</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-21T10:12:14+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        Um..! 4 posts in total. Keep on posting.
-      </span>
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
+            
+          
 
-        
+          
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/21/Algorithm-读书笔记/" itemprop="url">
-              
-                <span itemprop="name">Algorithm 读书笔记</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-21T10:12:14+08:00" content="2019-02-21">
-          02-21
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+        </div>
+      </header>
+    
 
-
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/19/CSAPP-读书笔记/" itemprop="url">
-              
-                <span itemprop="name">CSAPP 读书笔记</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-19T17:29:38+08:00" content="2019-02-19">
-          02-19
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/18/my-first-record/" itemprop="url">
-              
-                <span itemprop="name">my first record</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-18T00:12:11+08:00" content="2019-02-18">
-          02-18
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <h2 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h2><blockquote>
+<p>动态规划的本质还是递归，如同分治方法。不过分治方法将问题分化为互不相交的字问题，而动态规划应用于子问题重叠的情况，递归求解。然而这时候会反复求解那些公共子问题，于是考虑把子问题的解保存在一个数组中，实现只求解一次。</p>
+</blockquote>
+<ul>
+<li><p><strong>带备忘的自顶向下法</strong></p>
+<p>仍然按自然的递归形式编写过程，但过程会保存每个子问题的解。</p>
+</li>
+<li><p><strong>自底向上法</strong></p>
+<p>需要恰当定义子问题“规模”的概念，使得任何子问题都只依赖更小的子问题的求解。然后按子问题规模排序，由小至大顺序求解</p>
+</li>
+</ul>
+<p><em>有时候自顶向下方法并未真的递归考察所有可能子问题，另一方面，由于没有频繁的递归函数调用开销，自底向上方法的时间复杂度通常具有更小的系数</em></p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/17/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-17T22:01:54+08:00" content="2019-02-17">
-          02-17
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/02/19/CSAPP-读书笔记/" rel="next" title="CSAPP 读书笔记">
+                <i class="fa fa-chevron-left"></i> CSAPP 读书笔记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -392,6 +371,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -412,8 +395,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -455,6 +447,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#动态规划"><span class="nav-number">1.</span> <span class="nav-text">动态规划</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -595,6 +603,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
